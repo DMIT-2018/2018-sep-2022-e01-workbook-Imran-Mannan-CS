@@ -1,17 +1,12 @@
 <Query Kind="Expression">
   <Connection>
-    <ID>54bf9502-9daf-4093-88e8-7177c12aaaaa</ID>
-    <NamingService>2</NamingService>
+    <ID>5b8d0434-fce5-43ce-916f-979224bb6f13</ID>
+    <NamingServiceVersion>2</NamingServiceVersion>
     <Persist>true</Persist>
-    <Driver Assembly="(internal)" PublicKeyToken="no-strong-name">LINQPad.Drivers.EFCore.DynamicDriver</Driver>
-    <AttachFileName>&lt;ApplicationData&gt;\LINQPad\ChinookDemoDb.sqlite</AttachFileName>
-    <DisplayName>Demo database (SQLite)</DisplayName>
-    <DriverData>
-      <PreserveNumeric1>true</PreserveNumeric1>
-      <EFProvider>Microsoft.EntityFrameworkCore.Sqlite</EFProvider>
-      <MapSQLiteDateTimes>true</MapSQLiteDateTimes>
-      <MapSQLiteBooleans>true</MapSQLiteBooleans>
-    </DriverData>
+    <Server>WB320-04\SQLEXPRESS</Server>
+    <AllowDateOnlyTimeOnly>true</AllowDateOnlyTimeOnly>
+    <DeferDatabasePopulation>true</DeferDatabasePopulation>
+    <Database>Chinook</Database>
   </Connection>
 </Query>
 
