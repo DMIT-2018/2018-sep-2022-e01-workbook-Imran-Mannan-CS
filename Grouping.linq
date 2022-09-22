@@ -87,6 +87,7 @@ Albums
 Albums
    .GroupBy(a => new {a.ReleaseLabel, a.ReleaseYear})
    .Where(egP => egP.Count() > 2) //fifltering against each group pile
+   .ToList()
    .Select(eachgroupPile => new
    {
    		Label = eachgroupPile.Key.ReleaseLabel,
@@ -98,7 +99,8 @@ Albums
 						
 							title = egPInstance.Title,
 							artist = egPInstance.Artist.Name,
-							trackcount = egPInstance.Tracks.Count(),
+							trackcountA = egPInstance.Tracks.Count(),
+							trackcountB = egPInstance.Tracks.Select(x => x).Count(),
 							YearOfAlbum = egPInstance.ReleaseYear
 						
 						})
